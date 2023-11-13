@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700,800'); 
+:root {--neon-color: rgba(145, 4, 20,0.8);   
+  --main-black: #1C202B;   
+  --gray: rgba(192,192,192,0.8);  
+  --purple: rgba(38, 8, 34, 0.8);
+  --box-shadow: 0 0 7px var(--neon-color), inset 0 0 9px var(--neon-color);
+  --border-radius: 5px; }
+body{
+  position: relative;
+  top: 0;   
+  left: 0;   
+  height: 100%;   
+  width: 100%;   
+  z-index: -1;
+  background-image: url(https://wallpapers.com/images/high/neon-basketball-splatters-k9p9zcqqzqtku6vr.jpg);   
+  background-repeat: repeat-y;   background-size: cover;
+} 
+h1 {margin: 1.5px;   
+  color: #4c9ed9; 
+  font-weight: bold;
+  text-align: center;   
+  text-shadow: 0px 0px 10px  #14961a; }     
+p { margin: 1.5px;   
+  color:#4c9ed9;     
+  text-align: center; 
+}   
+main {
+  max-width: 600px;
+  margin: 10px auto;
+  background: var(--main-black-alpha);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px #000;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+}
+fieldset {   
+  margin: 10px 90px 10px 90px;   padding: 15px 10px;   
+  border: 2px solid var(--neon-color);   border-radius: var(--border-radius);   box-shadow: var(--box-shadow);    background :var(--purple); 
+}      
+legend {
+  background: var(--purple);
+  color: #fff;
+  padding: 5px 10px;
+  margin-left:70px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--neon-color);
+  box-shadow: var(--box-shadow);
+}
+input, textarea, select {
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 2px solid #000;
+  background: #ffffff;
+/*   width: 100%; */
+  color: var(--main-black);
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-field {
+  margin: 10px 5px;
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+.button {
+  background: transparent;
+  border: 2px solid var(--neon-color);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  color: var(--neon-color);
+  cursor: pointer;
+  margin: 5px 90px;
+  font-weight: 700;
+  transition: all 100ms ease-in;
+}
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+   background: var(--purple);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:var(--box-shadow);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.glow {
+  color: var(--neon-color);
+}

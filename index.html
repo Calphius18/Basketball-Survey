@@ -1,0 +1,165 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><main id="main">
+    <header class="header">
+      <h1 id="title"> A Basketball survey</h1>
+      <p id="description"> This is a survey to know your prefered parts in Basketball</p></header>
+    <form action="" id="survey-form">
+      <fieldset>  
+    <legend>Baller's Information</legend>
+        <div class="form-field">
+          <label for="name" id="name-label">Full Name<glow class="glow">*</glow></label>
+           <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Please enter your full name" required/></div>
+     <div class="form-field">
+          <label for="name" id="number-label">Age<glow class="glow">*</glow></label>
+          <input id="number" type="number" min="9" max="60" placeholder="Age">
+        </div>
+        <div class="form-field">
+          <label for="name" id="email-label">Email<glow class="glow">*</glow></label>
+          <input id="email" type="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-field">
+         <label for="dropdown" id="dropdown-label">What is your preferred position?</label>
+          <select name="type" id="dropdown">
+          <option value="" disabled selected>Please select your favoured position</option>
+             <option value="point">Point Guard</option>
+          <option value="shooting">Shooting Guard</option>
+          <option value="small">Small Forward</option>
+          <option value="power">Power Forward</option>
+          <option value="center">Center</option>
+        </select>
+        </div>
+      </fieldset>
+      <fieldset>
+      <legend>Which kind of dribbles can you do</legend>
+    <div class="input-group">
+            <div class="row">
+              <input type="checkbox" value="low" name="dribble" id="low">
+              <label for="low">Low Dribble</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" value="speed" name="dribble" id="speed">
+              <label for="speed">Speed Dribble</label>
+   </div>
+            <div class="row">
+              <input type="checkbox" value="change-of-pace" name="dribble" id="change-of-pace">
+              <label for="change-of-pace">Change-of-Pace Dribble</label>
+  </div>
+            <div class="row">
+              <input type="checkbox" value="crossover" name="dribble" id="crossover">
+              <label for="crossover">Crossover Dribble</label>
+            </div>
+        <div class="row">
+              <input type="checkbox" value="hockey" name="dribble" id="hockey">
+              <label for="hockey">Hockey Dribble</label>
+            </div>
+        <div class="row">
+              <input type="checkbox" value="reverse" name="dribble" id="reverse">
+              <label for="reverse">Reverse Dribble</label>
+            </div>
+        <div class="row">
+              <input type="checkbox" value="half" name="dribble" id="half">
+              <label for="half">Half-Reverse Dribble</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>    
+    <fieldset>
+    <legend> Do you usually practice with people </legend>
+     <div class="input-group">
+            <div class="row">
+              <input type="radio" name="practice" value="of course, the more the merrier" id="of course, the more the merrier">
+              <label for="of course, the more the merrier">Of course, the more the merrier</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="practice" value="sometimes, when i feel like it" id="sometimes, when i feel like it">
+              <label for="sometimes, when i feel like it">Sometimes, when I feel like it</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="practice" value="nope, i'm better off alone" id="3to5">
+              <label for="nope, i'm better off alone">Nope, I'm better off alone</label>
+       </div>        
+          </div>
+    </fieldset>
+    <fieldset>
+      <legend> Favourites</legend>
+       <div class="form-field">
+         <label for="dropdown" id="dropdown-label">Which NBA team is your favorite?</label>
+       <div class="righttab">
+          <select id="dropdown" name="favoriteteam" class="dropdown">
+            <option > Select a team</option>
+            <option value="student">Atlanta Hawks</option>
+            <option value="student">Boston Celtics</option>
+            <option value="student">Brooklyn Nets</option>
+            <option value="student">Charlotte Hornets</option>
+            <option value="student">Chicago Bulls</option>
+            <option value="student">Cleaveland Cavaliers</option>
+            <option value="student">Dallas Mavericks</option>
+            <option value="student">Denver Nuggets</option>
+            <option value="student">Detroit Pistons</option>
+            <option value="student">Golden State Warriors</option>
+            <option value="student">Houston Rockets</option>
+            <option value="student">Indiana Pacers</option>
+            <option value="student">LA Clippers</option>
+            <option value="student">Los Angeles Lakers</option>
+            <option value="student">Memphiis Grizzlies</option>
+            <option value="student">Miami Heat</option>
+            <option value="student">Milwaukee Bucks</option>
+            <option value="student">Minnesota Timberwolves</option>
+            <option value="student">New Orleans Pelicans</option>
+            <option value="student">New York Knicks</option>
+            <option value="student">Oklahoma City Thunder</option>
+            <option value="student">Orlando Magic</option>
+            <option value="student">Philadelphia 76ers</option>
+            <option value="student">Phoenix Suns</option>
+            <option value="student">Portland Trail Blazers</option>
+            <option value="student">Sacramento Kings</option>
+            <option value="student">San Antonio Spurs</option>
+            <option value="student">Toronto Raptors</option>
+            <option value="student">Utah Jazz</option>
+            <option value="student">Washington Wizards</option>
+          </select>
+        </div>
+      </div>
+       <div class="form-field">
+         <label for="dropdown" id="dropdown-label">Who is your favourite player in the NBA</label>
+         <div class="input-group">
+            <div class="row">
+              <input type="radio" name="player" value="steph" id="steph">
+              <label for="steph">Steph Curry</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="player" value="leBron" id="leBron"><label for="leBron">LeBron James</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="player" value="giannis" id="giannis"><label for="giannis ">Giannis Antetokounmpo	</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="player" value="kevin" id="kevin"><label for="kevin">Kevin Durant</label>
+            </div>
+           <div class="row">
+              <input type="radio" name="player" value="other" id="other"><label             for="other">Other</label>
+            </div>
+          </div>
+           </fieldset>
+      </div>
+      </div>
+    <fieldset> 
+      <legend>Any advice or additional comments</legend>
+     <label for="textarea"></label>
+      <div class="form-field">
+        <textarea name="comments" id="textarea" cols="30" rows="5" placeholder="Any Advice or comment for ballers that come after you..."></textarea>
+      </div></fieldset>
+      <div  class = "frame"> <button id = "submit" class="button btn-12"><span>Keep ballin!</span><span>Submit</span></button></div> 
+  
+    </form>
+  </main></body>
+  
+  <!--  Written and Coded by Fagbemi Babafemitan -->
+  
